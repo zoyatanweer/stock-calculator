@@ -1,0 +1,56 @@
+body{
+    background-image:url("photo/photo1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    padding:2rem;
+    text-align: center;
+}
+button{
+    background-color:black;
+    border-radius:0.5rem;
+    color:grey;
+    cursor:pointer;
+    font-size:1.2rem;
+    margin:3px;
+    padding:0.5rem;
+}
+button:hover{
+    color:white;
+    box-shadow: 3px 3px #09a6f3;
+}
+
+h1{
+    font-size:3rem;
+}
+
+label{
+    display:block; 
+    font-size:1.4rem;
+    margin:0.5rem;
+    padding-bottom:1rem;
+}
+input,label{
+    border-radius:0.5rem;
+    font-size:1.5rem;
+    margin-right:2rem;
+    padding:0.5rem;
+    padding-top:0.5rem;
+}
+
+#output{
+    font-size:1.4rem;
+    margin-top:1rem;
+}
+footer{
+    color:white;
+    margin-bottom:0.5rem;
+    margin-top:3rem;
+    margin-left:1.5rem;
+    padding-top:6rem;
+}
+.footer-icon{
+    margin:10px;
+    color:white;
+}

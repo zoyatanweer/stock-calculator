@@ -18,15 +18,15 @@
     <h1>Stock Profile & Loss Calculator</h1>
     <main>
         <label for="initial-price">Initial price:
-        <input id="initial-price" type="number" placeholder="Enter Initial price here" />
+        <input id="initial-price" type="number" placeholder="Enter Initial price here" step="any" min=0 oninput="validity.valid||(value='');" />
         </label>
 
         <label for="stocks-quantity"class="desc">Quantity of stocks:
-        <input id="stocks-quantity" type="number" placeholder="Enter the Number of stocks bought" />
+        <input id="stocks-quantity" type="number" placeholder="Enter the Number of stocks bought" min=0 oninput="validity.valid||(value='');"  />
         </label>
         
         <label for="current-price" class="desc">Current price:
-        <input id="current-price" type="number" placeholder="Enter the Current Price of the stocks" />
+        <input id="current-price" type="number" placeholder="Enter the Current Price of the stocks" step="any" min=0 oninput="validity.valid||(value='');" />
         </label>
         
         <button id="submit-btn">Tell me!</button>

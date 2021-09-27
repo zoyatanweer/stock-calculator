@@ -15,7 +15,10 @@ function submitHandler(){
 }
 
 function calculateProfitAndLoss(initial, quantity, current){
-    if(initial > current){
+    if(initial=="" || quantity=="" || current==""){
+        showOutput("PLease enter all the fields 😠")
+    }
+    else if(initial > current){
         // var loss = (initial-current) * quantity;
         // var lossPercentage = (loss/initial)*100;
 
@@ -38,11 +41,9 @@ function calculateProfitAndLoss(initial, quantity, current){
 
         document.body.style.backgroundImage = "url('photo/photo4.jpg')";
         showOutput(`Yay! You had absolute profit of ${profit} and the absolute Profit percent is ${profitPercentage}% 🤑📈`)
-    }else if(initial = current){
+    }else if(initial == current){
         document.body.style.backgroundImage = "url('photo/photo1.jpg')";
         showOutput("No pain no gain and no gain no pain 🤷")
-    }else{
-        alert("Please enter all the fields 😠")
     }
     
 }

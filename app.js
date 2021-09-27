@@ -23,7 +23,7 @@ function calculateProfitAndLoss(initial, quantity, current){
         // var lossPercentage = (loss/initial)*100;
 
         var loss = parseFloat((initial - current) * quantity).toFixed(2);  
-        var lossPercentage = parseFloat((loss/initial) * 100).toFixed(2);
+        var lossPercentage = parseFloat(((initial-current) *100)/initial).toFixed(2);
       
         if(lossPercentage > 50){
              document.body.style.backgroundImage = "url('photo/photo3.jpg')";
@@ -37,8 +37,8 @@ function calculateProfitAndLoss(initial, quantity, current){
         // var profitPercentage = (profit/initial)*100;
 
         var profit = parseFloat((current - initial) * quantity).toFixed(2);  
-        var profitPercentage = parseFloat((profit/initial) * 100).toFixed(2);
-
+        var profitPercentage = parseFloat(((current-initial) * 100)/initial).toFixed(2);
+        
         document.body.style.backgroundImage = "url('photo/photo4.jpg')";
         showOutput(`Yay! You had absolute profit of ${profit} and the absolute Profit percent is ${profitPercentage}% 🤑📈`)
     }else if(initial == current){
